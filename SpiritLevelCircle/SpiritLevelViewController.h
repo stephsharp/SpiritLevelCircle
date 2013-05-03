@@ -10,8 +10,8 @@
 #import <CoreMotion/CoreMotion.h>
 
 // Constants
-static const NSTimeInterval deviceMotionMin = 0.06;
 static const float viewInset = 14.0f;
+static const NSTimeInterval deviceMotionMin = 0.03;
 
 @interface SpiritLevelViewController : UIViewController
 

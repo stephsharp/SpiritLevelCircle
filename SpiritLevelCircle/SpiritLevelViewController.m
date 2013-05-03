@@ -72,33 +72,21 @@
 
 - (CGPoint)getPointForAttitude:(CMAttitude *)attitude
 {
-    CGPoint point = CGPointMake(attitude.roll, attitude.pitch);
-    float halfOfWidth = self.view.frame.size.width / 2.0f;
+    NSLog(@"Pitch: %f", attitude.pitch / M_PI * 180);
     
-    // Make the maximum degrees to the edge of the circle 25 degrees (90 degrees by default)
-    float maxDegreesInsideInset = 90.0f / self.view.frame.size.width * (self.view.frame.size.width - viewInset);
-    float ratio = maxDegreesInsideInset / 25.0f;
+    // Instead of 90 degrees being the edge of the circle, make it 25 degrees
+    //float maxDegreesInsideInset = 90.0f / self.view.frame.size.width * (self.view.frame.size.width - viewInset);
+    float ratio = 120.0f / 25.0f; //???
     
-    //NSLog(@"Pitch: %f", attitude.pitch / M_PI * 180);
-    //NSLog(@"Roll: %f", attitude.roll / M_PI * 180);
+    CGPoint point = CGPointMake(attitude.roll * ratio, attitude.pitch * ratio);
+    float halfOfWidth = self.view.center.x;
     
-    // Covert range of point from [-PI, PI] to [0, frame.width] 
-    //point.x = (point.x / M_PI * halfOfWidth * ratio) + halfOfWidth;
-    //point.y = (point.y / M_PI * halfOfWidth * ratio) + halfOfWidth;
+    // Covert range of point from [-PI, PI] to [0, frame.width]
     point.x = (point.x + M_PI) / (2 * M_PI) * self.view.frame.size.width;
     point.y = (point.y + M_PI) / (2 * M_PI) * self.view.frame.size.width;
     
-    NSLog(@"point %@", NSStringFromCGPoint(point));
-    //point = [self convertCartesianPointToScreenCoordSystem:point inFrame:self.view.frame];
-    
-    float maxValue = self.view.frame.size.width - viewInset;
-    float minValue = 0.0f + viewInset;
-    if (point.x > maxValue) point.x = maxValue;
-    if (point.x < minValue) point.x = minValue;
-    if (point.y > maxValue) point.y = maxValue;
-    if (point.y < minValue) point.y = minValue;
-    
-    float maxDistance = halfOfWidth - (viewInset / 2.0f);
+    // Get distance between position of ball and center of view
+    float maxDistance = halfOfWidth - viewInset;
     float distance = sqrtf(((point.x - halfOfWidth) * (point.x - halfOfWidth)) +
                            ((point.y - halfOfWidth) * (point.y - halfOfWidth)));
     
