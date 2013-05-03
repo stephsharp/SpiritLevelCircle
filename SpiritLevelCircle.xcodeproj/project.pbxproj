@@ -17,13 +17,13 @@
 		97BA8C7E173363C800E15544 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C7D173363C800E15544 /* Default@2x.png */; };
 		97BA8C80173363C800E15544 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C7F173363C800E15544 /* Default-568h@2x.png */; };
 		97BA8C83173363C800E15544 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C81173363C800E15544 /* MainStoryboard.storyboard */; };
-		97BA8C86173363C800E15544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA8C85173363C800E15544 /* ViewController.m */; };
-		97BA8C921733646700E15544 /* accelerometer-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C8D1733646700E15544 /* accelerometer-green.png */; };
-		97BA8C931733646700E15544 /* accelerometer-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C8E1733646700E15544 /* accelerometer-green@2x.png */; };
 		97BA8C941733646700E15544 /* accelerometer-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C8F1733646700E15544 /* accelerometer-red.png */; };
 		97BA8C951733646700E15544 /* accelerometer-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C901733646700E15544 /* accelerometer-red@2x.png */; };
 		97BA8C961733646700E15544 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C911733646700E15544 /* ball.png */; };
 		97BA8C9A173366C700E15544 /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C99173366C700E15544 /* ball@2x.png */; };
+		97BA8C9D1733675100E15544 /* SpiritLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA8C9C1733675100E15544 /* SpiritLevelViewController.m */; };
+		97BA8CA01733690000E15544 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BA8C9E173368ED00E15544 /* CoreMotion.framework */; };
+		97BA8CA317336D0700E15544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA8CA217336D0700E15544 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,14 +41,15 @@
 		97BA8C7D173363C800E15544 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		97BA8C7F173363C800E15544 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		97BA8C82173363C800E15544 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		97BA8C84173363C800E15544 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		97BA8C85173363C800E15544 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		97BA8C8D1733646700E15544 /* accelerometer-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-green.png"; sourceTree = "<group>"; };
-		97BA8C8E1733646700E15544 /* accelerometer-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-green@2x.png"; sourceTree = "<group>"; };
 		97BA8C8F1733646700E15544 /* accelerometer-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-red.png"; sourceTree = "<group>"; };
 		97BA8C901733646700E15544 /* accelerometer-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-red@2x.png"; sourceTree = "<group>"; };
 		97BA8C911733646700E15544 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		97BA8C99173366C700E15544 /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
+		97BA8C9B1733675100E15544 /* SpiritLevelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpiritLevelViewController.h; sourceTree = "<group>"; };
+		97BA8C9C1733675100E15544 /* SpiritLevelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpiritLevelViewController.m; sourceTree = "<group>"; };
+		97BA8C9E173368ED00E15544 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		97BA8CA117336D0700E15544 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		97BA8CA217336D0700E15544 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97BA8CA01733690000E15544 /* CoreMotion.framework in Frameworks */,
 				97BA8C6A173363C800E15544 /* UIKit.framework in Frameworks */,
 				97BA8C6C173363C800E15544 /* Foundation.framework in Frameworks */,
 				97BA8C6E173363C800E15544 /* CoreGraphics.framework in Frameworks */,
@@ -88,6 +90,7 @@
 				97BA8C69173363C800E15544 /* UIKit.framework */,
 				97BA8C6B173363C800E15544 /* Foundation.framework */,
 				97BA8C6D173363C800E15544 /* CoreGraphics.framework */,
+				97BA8C9E173368ED00E15544 /* CoreMotion.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,8 +101,10 @@
 				97BA8C78173363C800E15544 /* AppDelegate.h */,
 				97BA8C79173363C800E15544 /* AppDelegate.m */,
 				97BA8C81173363C800E15544 /* MainStoryboard.storyboard */,
-				97BA8C84173363C800E15544 /* ViewController.h */,
-				97BA8C85173363C800E15544 /* ViewController.m */,
+				97BA8CA117336D0700E15544 /* ViewController.h */,
+				97BA8CA217336D0700E15544 /* ViewController.m */,
+				97BA8C9B1733675100E15544 /* SpiritLevelViewController.h */,
+				97BA8C9C1733675100E15544 /* SpiritLevelViewController.m */,
 				97BA8C8C1733646700E15544 /* images */,
 				97BA8C70173363C800E15544 /* Supporting Files */,
 			);
@@ -123,8 +128,6 @@
 		97BA8C8C1733646700E15544 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				97BA8C8D1733646700E15544 /* accelerometer-green.png */,
-				97BA8C8E1733646700E15544 /* accelerometer-green@2x.png */,
 				97BA8C8F1733646700E15544 /* accelerometer-red.png */,
 				97BA8C901733646700E15544 /* accelerometer-red@2x.png */,
 				97BA8C911733646700E15544 /* ball.png */,
@@ -189,8 +192,6 @@
 				97BA8C7E173363C800E15544 /* Default@2x.png in Resources */,
 				97BA8C80173363C800E15544 /* Default-568h@2x.png in Resources */,
 				97BA8C83173363C800E15544 /* MainStoryboard.storyboard in Resources */,
-				97BA8C921733646700E15544 /* accelerometer-green.png in Resources */,
-				97BA8C931733646700E15544 /* accelerometer-green@2x.png in Resources */,
 				97BA8C941733646700E15544 /* accelerometer-red.png in Resources */,
 				97BA8C951733646700E15544 /* accelerometer-red@2x.png in Resources */,
 				97BA8C961733646700E15544 /* ball.png in Resources */,
@@ -207,7 +208,8 @@
 			files = (
 				97BA8C76173363C800E15544 /* main.m in Sources */,
 				97BA8C7A173363C800E15544 /* AppDelegate.m in Sources */,
-				97BA8C86173363C800E15544 /* ViewController.m in Sources */,
+				97BA8C9D1733675100E15544 /* SpiritLevelViewController.m in Sources */,
+				97BA8CA317336D0700E15544 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

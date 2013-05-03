@@ -8,7 +8,24 @@
 
 #import "AppDelegate.h"
 
+@interface AppDelegate ()
+{
+    CMMotionManager *motionmanager;
+}
+@end
+
 @implementation AppDelegate
+
+- (CMMotionManager *)sharedManager
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        motionmanager = [[CMMotionManager alloc] init];
+    });
+    return motionmanager;
+}
+
+#pragma mark -
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
