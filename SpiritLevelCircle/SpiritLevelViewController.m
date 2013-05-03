@@ -94,11 +94,11 @@
     {
         // Convert point from screen coordinate system to cartesian coordinate system,
         // with (0,0) located in the centre of the view
-        CGPoint newCenterInCartesianCoordSystem = [self convertScreenPointToCartesianCoordSystem:point
-                                                                                         inFrame:self.view.frame];
+        CGPoint pointInCartesianCoordSystem = [self convertScreenPointToCartesianCoordSystem:point
+                                                                                     inFrame:self.view.frame];
         
         // Calculate angle of point in radians from centre of the view
-        CGFloat angle = atan2(newCenterInCartesianCoordSystem.y, newCenterInCartesianCoordSystem.x);
+        CGFloat angle = atan2(pointInCartesianCoordSystem.y, pointInCartesianCoordSystem.x);
         
         // Get new point on the edge of the circle
         point = CGPointMake(cos(angle) * maxDistance, sinf(angle) * maxDistance);
