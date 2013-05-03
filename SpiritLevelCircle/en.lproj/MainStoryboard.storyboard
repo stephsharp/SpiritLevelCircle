@@ -26,8 +26,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EMv-51-osR" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="OQF-PR-sGw"/>
-                            <constraint firstItem="EMv-51-osR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="123" type="user" id="T75-B8-Y8A"/>
                             <constraint firstItem="EMv-51-osR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="120" id="at6-R1-mgv"/>
+                            <constraint firstItem="EMv-51-osR" firstAttribute="top" secondItem="3" secondAttribute="top" constant="80" id="jyU-TF-rtJ"/>
                         </constraints>
                     </view>
                     <connections>
