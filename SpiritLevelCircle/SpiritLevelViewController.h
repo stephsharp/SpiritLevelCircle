@@ -11,7 +11,7 @@
 
 // Constants
 static const float viewInset = 14.0f;
-static const NSTimeInterval deviceMotionMin = 0.03;
+static const NSTimeInterval deviceMotionMin = 0.02;
 
 @interface SpiritLevelViewController : UIViewController
 
