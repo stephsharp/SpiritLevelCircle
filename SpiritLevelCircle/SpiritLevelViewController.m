@@ -72,11 +72,11 @@
 
 - (CGPoint)getPointForAttitude:(CMAttitude *)attitude
 {
-    NSLog(@"Pitch: %f", attitude.pitch / M_PI * 180);
-    
+    // ----------- Having issues here with the ratio calculation -----------
+    // NSLog(@"Pitch: %f", attitude.pitch / M_PI * 180);
     // Instead of 90 degrees being the edge of the circle, make it 25 degrees
     //float maxDegreesInsideInset = 90.0f / self.view.frame.size.width * (self.view.frame.size.width - viewInset);
-    float ratio = 120.0f / 25.0f; //???
+    float ratio = 120.0f / 25.0f;
     
     CGPoint point = CGPointMake(attitude.roll * ratio, attitude.pitch * ratio);
     float halfOfWidth = self.view.center.x;
