@@ -18,6 +18,11 @@
 		97BA8C80173363C800E15544 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C7F173363C800E15544 /* Default-568h@2x.png */; };
 		97BA8C83173363C800E15544 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C81173363C800E15544 /* MainStoryboard.storyboard */; };
 		97BA8C86173363C800E15544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA8C85173363C800E15544 /* ViewController.m */; };
+		97BA8C921733646700E15544 /* accelerometer-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C8D1733646700E15544 /* accelerometer-green.png */; };
+		97BA8C931733646700E15544 /* accelerometer-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C8E1733646700E15544 /* accelerometer-green@2x.png */; };
+		97BA8C941733646700E15544 /* accelerometer-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C8F1733646700E15544 /* accelerometer-red.png */; };
+		97BA8C951733646700E15544 /* accelerometer-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C901733646700E15544 /* accelerometer-red@2x.png */; };
+		97BA8C961733646700E15544 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8C911733646700E15544 /* ball.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		97BA8C82173363C800E15544 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		97BA8C84173363C800E15544 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		97BA8C85173363C800E15544 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		97BA8C8D1733646700E15544 /* accelerometer-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-green.png"; sourceTree = "<group>"; };
+		97BA8C8E1733646700E15544 /* accelerometer-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-green@2x.png"; sourceTree = "<group>"; };
+		97BA8C8F1733646700E15544 /* accelerometer-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-red.png"; sourceTree = "<group>"; };
+		97BA8C901733646700E15544 /* accelerometer-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-red@2x.png"; sourceTree = "<group>"; };
+		97BA8C911733646700E15544 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +98,7 @@
 				97BA8C81173363C800E15544 /* MainStoryboard.storyboard */,
 				97BA8C84173363C800E15544 /* ViewController.h */,
 				97BA8C85173363C800E15544 /* ViewController.m */,
+				97BA8C8C1733646700E15544 /* images */,
 				97BA8C70173363C800E15544 /* Supporting Files */,
 			);
 			path = SpiritLevelCircle;
@@ -105,6 +116,18 @@
 				97BA8C7F173363C800E15544 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97BA8C8C1733646700E15544 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				97BA8C8D1733646700E15544 /* accelerometer-green.png */,
+				97BA8C8E1733646700E15544 /* accelerometer-green@2x.png */,
+				97BA8C8F1733646700E15544 /* accelerometer-red.png */,
+				97BA8C901733646700E15544 /* accelerometer-red@2x.png */,
+				97BA8C911733646700E15544 /* ball.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +186,11 @@
 				97BA8C7E173363C800E15544 /* Default@2x.png in Resources */,
 				97BA8C80173363C800E15544 /* Default-568h@2x.png in Resources */,
 				97BA8C83173363C800E15544 /* MainStoryboard.storyboard in Resources */,
+				97BA8C921733646700E15544 /* accelerometer-green.png in Resources */,
+				97BA8C931733646700E15544 /* accelerometer-green@2x.png in Resources */,
+				97BA8C941733646700E15544 /* accelerometer-red.png in Resources */,
+				97BA8C951733646700E15544 /* accelerometer-red@2x.png in Resources */,
+				97BA8C961733646700E15544 /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
