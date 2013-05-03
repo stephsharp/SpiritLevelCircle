@@ -64,7 +64,7 @@
     {
         [mManager setDeviceMotionUpdateInterval:updateInterval];
         [mManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMDeviceMotion * deviceMotion, NSError *error) {
-            CGPoint newCenter = [self getPointForAttitude:deviceMotion.attitude];
+            CGPoint newCenter = [weakSelf getPointForAttitude:deviceMotion.attitude];
             weakSelf.ball.center = newCenter;
         }];
     }
