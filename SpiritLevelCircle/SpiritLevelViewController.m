@@ -87,8 +87,7 @@
     
     // Get distance between position of ball and center of view
     float maxDistance = halfOfWidth - viewInset;
-    float distance = sqrtf(((point.x - halfOfWidth) * (point.x - halfOfWidth)) +
-                           ((point.y - halfOfWidth) * (point.y - halfOfWidth)));
+    float distance = sqrtf(powf(point.x - halfOfWidth, 2) + powf(point.y - halfOfWidth, 2));
     
     if (distance > maxDistance)
     {
