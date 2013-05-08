@@ -10,7 +10,7 @@
 #import <CoreMotion/CoreMotion.h>
 
 // Constants
-static const float viewInset = 14.0f;
+static const float viewInset = 17.0f;
 static const float acceptableDistance = 12.0f;
 static const NSTimeInterval deviceMotionMin = 0.02;
 
