@@ -22,6 +22,5 @@ static const NSTimeInterval deviceMotionMin = 0.02;
 
 // Outlets
 @property (nonatomic, weak) IBOutlet UIImageView * ball;
-@property (nonatomic, weak) IBOutlet UIImageView * background;
 
 @end

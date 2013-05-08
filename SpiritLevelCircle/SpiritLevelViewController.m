@@ -23,7 +23,7 @@
 
 @implementation SpiritLevelViewController
 
-@synthesize motionManager, queue, ball, background;
+@synthesize motionManager, queue, ball;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,6 +37,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    // Set background to green
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"accelerometer-green"]];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -114,17 +117,17 @@
     if (distance < acceptableDistance)
     {
         // Set background to green
-        self.background.image = [UIImage imageNamed:@"accelerometer-green"];
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"accelerometer-green"]];
     }
     else
     {
         // Set background to red
-        self.background.image = [UIImage imageNamed:@"accelerometer-red"];
+        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"accelerometer-red"]];
     }
     
     // Make the ball go in the opposite direction to tilt of device (like a spirit level's bubble)
     point = CGPointMake(self.view.frame.size.width - point.x,
-                            self.view.frame.size.width - point.y);
+                        self.view.frame.size.width - point.y);
     
     return point;
 }
