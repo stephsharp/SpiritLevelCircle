@@ -7,7 +7,6 @@
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
@@ -34,6 +33,7 @@
                         <outlet property="ball" destination="MNp-XW-Jno" id="vb9-nV-3E6"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="107" y="19"/>
         </scene>
@@ -45,16 +45,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="accelerometer-red.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-dA-DSL"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="accelerometer-green.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xeh-dA-DSL"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="MNp-XW-Jno"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="crosshairs.png" translatesAutoresizingMaskIntoConstraints="NO" id="cKH-sF-eEg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="IQE-DJ-zhJ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="MNp-XW-Jno" firstAttribute="centerX" secondItem="Xeh-dA-DSL" secondAttribute="centerX" type="default" id="80c-Te-gdd"/>
-                            <constraint firstItem="Xeh-dA-DSL" firstAttribute="trailing" secondItem="gIz-Vh-qVf" secondAttribute="trailing" type="default" id="EOR-OP-BZD"/>
+                            <constraint firstItem="cKH-sF-eEg" firstAttribute="centerY" secondItem="MNp-XW-Jno" secondAttribute="centerY" type="default" id="9ED-em-uub"/>
+                            <constraint firstItem="cKH-sF-eEg" firstAttribute="centerY" secondItem="Xeh-dA-DSL" secondAttribute="centerY" type="default" id="Fne-7h-3KB"/>
                             <constraint firstItem="Xeh-dA-DSL" firstAttribute="leading" secondItem="gIz-Vh-qVf" secondAttribute="leading" type="default" id="IvQ-6Z-YZU"/>
-                            <constraint firstItem="Xeh-dA-DSL" firstAttribute="bottom" secondItem="gIz-Vh-qVf" secondAttribute="bottom" type="default" id="fCZ-VC-P4S"/>
-                            <constraint firstItem="MNp-XW-Jno" firstAttribute="centerY" secondItem="Xeh-dA-DSL" secondAttribute="centerY" type="default" id="mmX-hY-MrV"/>
+                            <constraint firstItem="cKH-sF-eEg" firstAttribute="centerX" secondItem="MNp-XW-Jno" secondAttribute="centerX" type="default" id="hbm-Q9-qhf"/>
                             <constraint firstAttribute="height" constant="80" type="user" id="rRD-Hy-1YG"/>
                             <constraint firstItem="Xeh-dA-DSL" firstAttribute="top" secondItem="gIz-Vh-qVf" secondAttribute="top" type="default" id="y6a-Px-vTv"/>
                         </constraints>
@@ -70,8 +75,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="accelerometer-red.png" width="83" height="79"/>
+        <image name="accelerometer-green.png" width="80" height="80"/>
         <image name="ball.png" width="18" height="18"/>
+        <image name="crosshairs.png" width="64" height="65"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">

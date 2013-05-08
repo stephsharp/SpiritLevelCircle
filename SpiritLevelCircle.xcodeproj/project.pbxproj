@@ -24,6 +24,10 @@
 		97BA8C9D1733675100E15544 /* SpiritLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA8C9C1733675100E15544 /* SpiritLevelViewController.m */; };
 		97BA8CA01733690000E15544 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97BA8C9E173368ED00E15544 /* CoreMotion.framework */; };
 		97BA8CA317336D0700E15544 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BA8CA217336D0700E15544 /* ViewController.m */; };
+		97BA8CA8173A730B00E15544 /* crosshairs@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8CA4173A730B00E15544 /* crosshairs@2x.png */; };
+		97BA8CA9173A730B00E15544 /* crosshairs.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8CA5173A730B00E15544 /* crosshairs.png */; };
+		97BA8CAA173A730B00E15544 /* accelerometer-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8CA6173A730B00E15544 /* accelerometer-green@2x.png */; };
+		97BA8CAB173A730B00E15544 /* accelerometer-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 97BA8CA7173A730B00E15544 /* accelerometer-green.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		97BA8C9E173368ED00E15544 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		97BA8CA117336D0700E15544 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		97BA8CA217336D0700E15544 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		97BA8CA4173A730B00E15544 /* crosshairs@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "crosshairs@2x.png"; sourceTree = "<group>"; };
+		97BA8CA5173A730B00E15544 /* crosshairs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crosshairs.png; sourceTree = "<group>"; };
+		97BA8CA6173A730B00E15544 /* accelerometer-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-green@2x.png"; sourceTree = "<group>"; };
+		97BA8CA7173A730B00E15544 /* accelerometer-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "accelerometer-green.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +136,12 @@
 		97BA8C8C1733646700E15544 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				97BA8CA6173A730B00E15544 /* accelerometer-green@2x.png */,
+				97BA8CA7173A730B00E15544 /* accelerometer-green.png */,
 				97BA8C8F1733646700E15544 /* accelerometer-red.png */,
 				97BA8C901733646700E15544 /* accelerometer-red@2x.png */,
+				97BA8CA4173A730B00E15544 /* crosshairs@2x.png */,
+				97BA8CA5173A730B00E15544 /* crosshairs.png */,
 				97BA8C911733646700E15544 /* ball.png */,
 				97BA8C99173366C700E15544 /* ball@2x.png */,
 			);
@@ -196,6 +208,10 @@
 				97BA8C951733646700E15544 /* accelerometer-red@2x.png in Resources */,
 				97BA8C961733646700E15544 /* ball.png in Resources */,
 				97BA8C9A173366C700E15544 /* ball@2x.png in Resources */,
+				97BA8CA8173A730B00E15544 /* crosshairs@2x.png in Resources */,
+				97BA8CA9173A730B00E15544 /* crosshairs.png in Resources */,
+				97BA8CAA173A730B00E15544 /* accelerometer-green@2x.png in Resources */,
+				97BA8CAB173A730B00E15544 /* accelerometer-green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +348,7 @@
 				97BA8C8B173363C800E15544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
