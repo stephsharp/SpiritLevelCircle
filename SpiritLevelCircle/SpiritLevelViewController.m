@@ -23,7 +23,7 @@
 
 @implementation SpiritLevelViewController
 
-@synthesize motionManager, queue, ball;
+@synthesize motionManager, queue, ball, background;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -104,6 +104,17 @@
         
         // Convert back to screen coordinate system
         point = [self convertCartesianPointToScreenCoordSystem:point inFrame:self.view.frame];
+    }
+    
+    if (distance < acceptableDistance)
+    {
+        // Set background to green
+        self.background.image = [UIImage imageNamed:@"accelerometer-green"];
+    }
+    else
+    {
+        // Set background to red
+        self.background.image = [UIImage imageNamed:@"accelerometer-red"];
     }
     
     // Make the ball go in the opposite direction to tilt of device (like a spirit level's bubble)

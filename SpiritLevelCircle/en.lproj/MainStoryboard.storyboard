@@ -66,6 +66,7 @@
                     </view>
                     <toolbarItems/>
                     <connections>
+                        <outlet property="background" destination="Xeh-dA-DSL" id="i4l-FQ-Ttr"/>
                         <outlet property="ball" destination="MNp-XW-Jno" id="Jf2-YZ-24P"/>
                     </connections>
                 </viewController>
@@ -86,6 +87,7 @@
         <class className="SpiritLevelViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SpiritLevelViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="ball" candidateClass="UIImageView"/>
             </relationships>
         </class>

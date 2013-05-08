@@ -11,6 +11,7 @@
 
 // Constants
 static const float viewInset = 14.0f;
+static const float acceptableDistance = 12.0f;
 static const NSTimeInterval deviceMotionMin = 0.02;
 
 @interface SpiritLevelViewController : UIViewController
@@ -21,5 +22,6 @@ static const NSTimeInterval deviceMotionMin = 0.02;
 
 // Outlets
 @property (nonatomic, weak) IBOutlet UIImageView * ball;
+@property (nonatomic, weak) IBOutlet UIImageView * background;
 
 @end
